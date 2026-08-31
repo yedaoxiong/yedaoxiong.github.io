@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Yedaoxiong Apps">
+  <defs>
+    <linearGradient id="g" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#317b60"/>
+      <stop offset="1" stop-color="#65ad8d"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="20" fill="url(#g)"/>
+  <path d="M17 16h10l6 12 6-12h10L38 37v11H28V37L17 16Z" fill="#fff"/>
+</svg>
