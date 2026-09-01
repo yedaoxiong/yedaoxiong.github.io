@@ -358,6 +358,31 @@ h1 {
   color: var(--muted);
 }
 
+.language-switcher {
+  display: inline-flex;
+  gap: 4px;
+  margin-top: 20px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--surface);
+}
+
+.language-switcher a {
+  padding: 5px 10px;
+  border-radius: 9px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.language-switcher a:hover,
+.language-switcher a[aria-current="true"] {
+  color: var(--primary-strong);
+  background: var(--surface-soft);
+}
+
 .support-heading .hero-actions {
   justify-content: flex-start;
   margin-top: 22px;
