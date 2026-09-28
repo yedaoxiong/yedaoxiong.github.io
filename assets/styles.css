@@ -130,7 +130,7 @@ nav a[aria-current="page"] {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   margin-bottom: 88px;
   scroll-margin-top: 24px;
@@ -152,6 +152,12 @@ nav a[aria-current="page"] {
 .product-card.minibook-card {
   background:
     radial-gradient(circle at 100% 0%, rgba(100, 177, 151, 0.18), transparent 18rem),
+    var(--surface);
+}
+
+.product-card.minitodo-card {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(38, 184, 111, 0.17), transparent 18rem),
     var(--surface);
 }
 
