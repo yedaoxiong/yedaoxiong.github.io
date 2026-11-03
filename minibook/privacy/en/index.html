@@ -25,7 +25,7 @@
       <div class="document-heading">
         <p class="eyebrow">Privacy Policy</p>
         <h1>MiniBook Privacy Policy</h1>
-        <p>Effective: August 31, 2026</p>
+        <p>Last updated: November 3, 2026 · MiniBook 1.1.0</p>
         <div class="language-switcher" aria-label="Language">
           <a href="../" lang="zh-Hans">简体中文</a>
           <a href="../zh-hant/" lang="zh-Hant">繁體中文</a>
@@ -38,12 +38,12 @@
 
         <section>
           <h2><span>1</span>Data collection</h2>
-          <p>The current version of MiniBook requires no account and includes no advertising or analytics. We do not collect, upload, sell, or share your ledgers, categories, transactions, notes, or usage data with third parties.</p>
+          <p>MiniBook requires no account and includes no advertising, behavioral analytics, or cross-app tracking. The app does not automatically upload your ledgers, categories, transactions, balances, or notes to the developer or sell that data. Network information involved in reference rates and feedback you choose to send are described in sections 4 and 9.</p>
         </section>
 
         <section>
           <h2><span>2</span>On-device data</h2>
-          <p>Ledgers, opening balances, categories, income and expense records, notes, and language, currency, and appearance preferences are stored locally on your device. MiniBook currently has no account system or automatic cloud sync.</p>
+          <p>Ledger names and currencies, opening balances, categories, entries, notes, language, main currency, appearance, last successful backup time, and cached rates are stored on your device. MiniBook has no account system and does not initiate automatic cloud sync. Device-level backup and restore are managed by iOS and your system settings.</p>
         </section>
 
         <section>
@@ -52,28 +52,35 @@
         </section>
 
         <section>
-          <h2><span>4</span>System access and external links</h2>
-          <p>MiniBook uses the system document picker and share sheet for export and restore. It does not request access to location, camera, microphone, contacts, or health data. The app opens the system browser only when you choose the Privacy or Support link. From the Support page, you may separately choose an external contact method such as email or Weibo. No ledger data is attached to these links.</p>
+          <h2><span>4</span>Exchange-rate updates</h2>
+          <p>When different-currency ledgers exist, MiniBook requests public reference rates over HTTPS from the open.er-api.com endpoint of <a href="https://www.exchangerate-api.com/" rel="noopener noreferrer">ExchangeRate-API</a>. The business parameter is the ISO code of the main currency. Ledger names, balances, entries, categories, notes, and advertising identifiers are not sent. Amounts are converted on your device.</p>
+          <p>The network connection exposes technical information such as IP address and request time to the provider and its infrastructure. Their processing is covered by the provider's <a href="https://www.exchangerate-api.com/terms" rel="noopener noreferrer">Terms and Privacy Policy</a>. MiniBook does not control third-party server logs or retention periods, and does not use these requests for advertising or user profiling.</p>
+          <p>Successful results are cached for about 24 hours per main currency. Expired or failed requests may be retried, and changing the main currency may trigger another request. Available cached rates remain usable offline; expired rates are labeled as cached when a network refresh fails. Without rates, original-currency records remain usable. Estimates do not change saved amounts or represent a bank or payment provider's settlement rate. If all ledgers use the main currency, cross-currency conversion does not trigger rate requests.</p>
         </section>
 
         <section>
-          <h2><span>5</span>Data deletion</h2>
-          <p>You can delete transactions, categories, and ledgers in the app. Deleting a category also deletes its associated transactions, and deleting a ledger also deletes its transactions; MiniBook explains the impact and asks for confirmation first. Uninstalling MiniBook removes its local app data, but not copies of exports or backups you previously saved to Files or another location.</p>
+          <h2><span>5</span>System access and external links</h2>
+          <p>MiniBook uses the system document picker and share sheet for export and restore. It does not request access to location, camera, microphone, contacts, or health data. The app opens the system browser when you choose Privacy, Support, or the exchange-rate source. From the Support page, you may separately choose an external contact method such as email or Weibo. No ledger data is attached to these links.</p>
         </section>
 
         <section>
-          <h2><span>6</span>Third-party components</h2>
-          <p>The app uses Flutter and components for a local database, preferences, document selection, system sharing, and external links. The current version does not use these components to transmit your ledger data to the developer.</p>
+          <h2><span>6</span>Data deletion</h2>
+          <p>You can delete entries, categories, and ledgers in the app. Category deletion also removes associated entries; ledger deletion also removes its entries. MiniBook explains the impact and asks for confirmation. Choosing Delete App in iOS removes the app's local data; Offload App may retain it. System backups and copies of exports or backups in Files or other locations must be managed or deleted separately.</p>
         </section>
 
         <section>
-          <h2><span>7</span>Children's privacy</h2>
+          <h2><span>7</span>Third-party components</h2>
+          <p>The app uses Flutter and components for a local database, preferences, network requests, document selection, system sharing, and external links. Other than the exchange-rate request described above, the current version does not use these components to transmit user data to third parties.</p>
+        </section>
+
+        <section>
+          <h2><span>8</span>Children's privacy</h2>
           <p>MiniBook is not directed specifically to children and does not knowingly collect personal information from children.</p>
         </section>
 
         <section>
-          <h2><span>8</span>Updates and contact</h2>
-          <p>If a future version adds cloud sync, accounts, analytics, or other data features, this policy will be updated before those features are released. For questions, email <a href="mailto:yedaoxiong@qq.com">yedaoxiong@qq.com</a> or visit the <a href="../../support/en/">Support and Feedback page</a>.</p>
+          <h2><span>9</span>Updates and contact</h2>
+          <p>If a future version adds cloud sync, accounts, analytics, or other data features, this policy will be updated before release. For questions, email <a href="mailto:yedaoxiong@qq.com">yedaoxiong@qq.com</a> or visit <a href="../../support/en/">Support and Feedback</a>. If you send feedback, we receive the email address and content you provide to respond to your request. Please avoid sending real financial, identity, or other sensitive information.</p>
         </section>
       </article>
     </main>

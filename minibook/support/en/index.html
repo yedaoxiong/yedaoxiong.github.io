@@ -51,12 +51,28 @@
           <p>CSV is intended for viewing and analyzing transactions in a spreadsheet. A full JSON backup preserves ledgers, categories, transactions, and their relationships so MiniBook can restore them.</p>
         </details>
         <details>
-          <summary>Does changing the display currency convert existing amounts?</summary>
-          <p>No. The currency setting changes only the displayed symbol and unit. It does not perform exchange-rate conversion or modify saved amounts.</p>
+          <summary>How do ledger currency and main currency differ?</summary>
+          <p>A ledger's currency is the original unit of its entries. The main currency in Settings is used for reference conversions. When they differ, Home and Statistics show estimates in the main currency. Changing the main currency does not rewrite original amounts.</p>
+        </details>
+        <details>
+          <summary>Can I correct an old ledger that actually contains yen?</summary>
+          <p>Yes. Open the ledger's ⋯ menu, choose the correct currency, and confirm. A recorded 1,280 remains JPY 1,280 after correction; it is not converted at an exchange rate. The opening balance also keeps its original number. Main-currency estimates are calculated separately. Create a full backup before changing a ledger's currency.</p>
+        </details>
+        <details>
+          <summary>Can I use MiniBook offline? When are rates refreshed?</summary>
+          <p>Original-currency entry, records, calculations, and local statistics work offline. Reference rates come from ExchangeRate-API and successful results are cached for about 24 hours per main currency. Expired or failed requests may be retried. Available cached rates remain usable offline; without rates, estimates are hidden. Estimates are not bank or payment settlement quotes. Network processing is explained in the <a href="../../privacy/en/">Privacy Policy</a>.</p>
+        </details>
+        <details>
+          <summary>Does Month / All change my current balance?</summary>
+          <p>No. Current balance always includes the opening balance and all historical entries. The switch changes income, expense, and same-currency net summaries only.</p>
+        </details>
+        <details>
+          <summary>How do calculations work when entering an amount?</summary>
+          <p>The number pad supports addition, subtraction, multiplication, division, equals, and chained calculations, with the expression and result shown as you type. It performs simple calculations in input order, without parentheses or complex operator precedence. Check the result before saving.</p>
         </details>
         <details>
           <summary>Can I recover data after deleting the app?</summary>
-          <p>Uninstalling the app removes its local data. If you previously saved a full backup to Files or another location, you can restore that file after reinstalling.</p>
+          <p>Delete App in iOS removes local app data, whereas Offload App may retain it. If you saved a full JSON backup, you can restore that file after reinstalling. New backups preserve ledger currencies. Older backups can still be imported; review ledger currencies after importing them.</p>
         </details>
         <details>
           <summary>What should I include in a bug report?</summary>
