@@ -161,6 +161,12 @@ nav a[aria-current="page"] {
     var(--surface);
 }
 
+.product-card.minidays-card {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(224, 147, 94, 0.19), transparent 18rem),
+    var(--surface);
+}
+
 .product-heading {
   display: flex;
   align-items: center;
