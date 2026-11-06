@@ -25,7 +25,7 @@
       <div class="document-heading">
         <p class="eyebrow">Privacy Policy</p>
         <h1>MiniBook 隱私權政策</h1>
-        <p>更新日期：2026 年 11 月 3 日 · 適用於 MiniBook 1.1.0</p>
+        <p>更新日期：2026 年 11 月 6 日 · 適用於 MiniBook 1.1.0</p>
         <div class="language-switcher" aria-label="語言">
           <a href="../" lang="zh-Hans">简体中文</a>
           <a aria-current="true" href="./">繁體中文</a>
@@ -53,8 +53,8 @@
 
         <section>
           <h2><span>4</span>匯率更新</h2>
-          <p>存在跨幣種帳本時，MiniBook 會透過 HTTPS 向 <a href="https://www.exchangerate-api.com/" rel="noopener noreferrer">ExchangeRate-API</a> 的 open.er-api.com 介面取得公開參考匯率。業務參數為主幣種的 ISO 代碼，不會傳送帳本名稱、餘額、帳單、分類、備註或裝置廣告識別碼；金額換算在裝置本機完成。</p>
-          <p>網路連線會向服務方及其基礎設施提供 IP 位址、請求時間等技術資訊，處理規則見其<a href="https://www.exchangerate-api.com/terms" rel="noopener noreferrer">服務條款與隱私權政策</a>。MiniBook 不控制第三方伺服器日誌或保留期限，也不會將這些請求用於廣告或使用者剖析。</p>
+          <p>存在跨幣種帳本時，MiniBook 會透過 HTTPS 向 <a href="https://frankfurter.dev/" rel="noopener noreferrer">Frankfurter</a> 的 api.frankfurter.dev 介面取得參考匯率。請求只攜帶主幣種及目標幣種的 ISO 代碼，不會傳送帳本名稱、餘額、帳單、分類、備註、使用者識別碼或裝置廣告識別碼；金額換算在裝置本機完成。</p>
+          <p>網路服務在處理連線時會接觸 IP 等必要技術資訊。根據 Frankfurter 的<a href="https://frankfurter.dev/#faq" rel="noopener noreferrer">公開隱私說明</a>，其 API 不收集或記錄個人資料、IP 位址或請求 URL，不保留請求日誌；基礎設施僅提供彙總流量統計。MiniBook 不會將匯率請求用於廣告、使用者剖析或跨 App 追蹤。</p>
           <p>成功結果按主幣種在本機快取約 24 小時；過期或失敗後可能重試，切換主幣種也可能觸發新請求。離線時可使用既有快取；過期後網路更新失敗會標示快取匯率，沒有可用匯率時仍保留原幣記錄。參考約值不會改變已儲存的金額，也不代表銀行或支付機構的實際結算匯率。若僅使用與主幣種相同幣種的帳本，不會因跨幣種換算觸發匯率請求。</p>
         </section>
 

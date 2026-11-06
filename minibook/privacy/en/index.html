@@ -25,7 +25,7 @@
       <div class="document-heading">
         <p class="eyebrow">Privacy Policy</p>
         <h1>MiniBook Privacy Policy</h1>
-        <p>Last updated: November 3, 2026 · MiniBook 1.1.0</p>
+        <p>Last updated: November 6, 2026 · MiniBook 1.1.0</p>
         <div class="language-switcher" aria-label="Language">
           <a href="../" lang="zh-Hans">简体中文</a>
           <a href="../zh-hant/" lang="zh-Hant">繁體中文</a>
@@ -53,8 +53,8 @@
 
         <section>
           <h2><span>4</span>Exchange-rate updates</h2>
-          <p>When different-currency ledgers exist, MiniBook requests public reference rates over HTTPS from the open.er-api.com endpoint of <a href="https://www.exchangerate-api.com/" rel="noopener noreferrer">ExchangeRate-API</a>. The business parameter is the ISO code of the main currency. Ledger names, balances, entries, categories, notes, and advertising identifiers are not sent. Amounts are converted on your device.</p>
-          <p>The network connection exposes technical information such as IP address and request time to the provider and its infrastructure. Their processing is covered by the provider's <a href="https://www.exchangerate-api.com/terms" rel="noopener noreferrer">Terms and Privacy Policy</a>. MiniBook does not control third-party server logs or retention periods, and does not use these requests for advertising or user profiling.</p>
+          <p>When different-currency ledgers exist, MiniBook requests reference rates over HTTPS from api.frankfurter.dev, operated by <a href="https://frankfurter.dev/" rel="noopener noreferrer">Frankfurter</a>. Requests contain only ISO codes for the main and target currencies. Ledger names, balances, entries, categories, notes, user identifiers, and advertising identifiers are not sent. Amounts are converted on your device.</p>
+          <p>Serving a network connection involves necessary technical information such as an IP address. Frankfurter's <a href="https://frankfurter.dev/#faq" rel="noopener noreferrer">published privacy explanation</a> states that its API does not collect or record personal data, IP addresses, or request URLs, and retains no request logs; its infrastructure provides aggregate traffic statistics only. MiniBook does not use rate requests for advertising, profiling, or cross-app tracking.</p>
           <p>Successful results are cached for about 24 hours per main currency. Expired or failed requests may be retried, and changing the main currency may trigger another request. Available cached rates remain usable offline; expired rates are labeled as cached when a network refresh fails. Without rates, original-currency records remain usable. Estimates do not change saved amounts or represent a bank or payment provider's settlement rate. If all ledgers use the main currency, cross-currency conversion does not trigger rate requests.</p>
         </section>
 
